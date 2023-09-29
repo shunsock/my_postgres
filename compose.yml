@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: mypass
+    ports:
+      - '13306:3306'
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: postgrespass
+    ports:
+      - '15432:5432'
